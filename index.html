@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leban Mohamud | Data + Product</title>
+    <meta
+      name="description"
+      content="Portfolio of Leban Mohamud — Data Analytics, Product, and Dashboarding."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="Go to top">LM</a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="navLinks">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="burger" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#work">Work</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn-small" href="#" id="resumeLink">Resume</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="section hero" id="top">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">UW Informatics • Data Analytics • Product</p>
+            <h1>
+              I turn messy data into
+              <span class="gradient">clear decisions</span>.
+            </h1>
+            <p class="lead">
+              I build dashboards, automate reporting, and ship product insights that
+              move metrics — from marketing analytics to anti-cheat operations.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn" href="#projects">See projects</a>
+              <a class="btn btn-ghost" href="#contact">Contact me</a>
+            </div>
+
+            <div class="chips">
+              <span class="chip">SQL</span>
+              <span class="chip">Python</span>
+              <span class="chip">R</span>
+              <span class="chip">Tableau</span>
+              <span class="chip">GA4</span>
+              <span class="chip">Experimentation</span>
+            </div>
+          </div>
+
+          <div class="card hero-card">
+            <div class="hero-card-top">
+              <div class="avatar" aria-hidden="true">LM</div>
+              <div>
+                <p class="name">Leban Mohamud</p>
+                <p class="subtitle">Data Analytics • Product • Dashboards</p>
+              </div>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat">
+                <p class="stat-num">3</p>
+                <p class="stat-label">Internships</p>
+              </div>
+              <div class="stat">
+                <p class="stat-num">10+</p>
+                <p class="stat-label">Dashboards / Reports</p>
+              </div>
+              <div class="stat">
+                <p class="stat-num">2026</p>
+                <p class="stat-label">UW Grad</p>
+              </div>
+            </div>
+
+            <div class="hero-card-actions">
+              <a class="btn btn-small" href="#contact">Let’s talk</a>
+              <a class="btn btn-small btn-ghost" href="#projects">Proof</a>
+            </div>
+
+            <p class="fineprint">
+              Tip: Replace “LM” with your photo later (or keep it clean).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK / EXPERIENCE -->
+      <section class="section" id="work">
+        <div class="container">
+          <h2>Experience</h2>
+          <p class="muted">
+            Highlights from roles where I owned metrics, automation, and stakeholder-ready
+            insights.
+          </p>
+
+          <div class="grid-2">
+            <article class="card">
+              <div class="card-head">
+                <h3>Electronic Arts — Data Analyst Intern (Anti-Cheat)</h3>
+                <p class="muted">Fall 2025</p>
+              </div>
+              <ul class="bullets">
+                <li>Analyzed detections and player signals to reduce false positives/negatives.</li>
+                <li>Built repeatable SQL/Python workflows to support live operations during launch windows.</li>
+                <li>Partnered with engineers to translate findings into action (tuning, rules, triage).</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Ops analytics</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-head">
+                <h3>Delta Dental of Washington — Data Analytics Intern</h3>
+                <p class="muted">Summer 2024</p>
+              </div>
+              <ul class="bullets">
+                <li>Automated GA4 reporting and established KPI baselines for key funnels.</li>
+                <li>Conducted tagging gap analysis and improved page/CTA-level tracking quality.</li>
+                <li>Presented dashboards to stakeholders and standardized reporting across teams.</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">GA4</span><span class="tag">Tableau</span><span class="tag">Funnel analysis</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Projects</h2>
+              <p class="muted">
+                A few things I’ve built — dashboards, pipelines, and product experiments.
+              </p>
+            </div>
+
+            <div class="filters">
+              <button class="pill is-active" data-filter="all">All</button>
+              <button class="pill" data-filter="data">Data</button>
+              <button class="pill" data-filter="product">Product</button>
+              <button class="pill" data-filter="viz">Viz</button>
+            </div>
+          </div>
+
+          <div class="project-grid" id="projectGrid">
+            <article class="card project" data-tags="product,data">
+              <h3>Fleet Safety & Ops Dashboard (MVP)</h3>
+              <p class="muted">
+                Product-style dashboard for telematics + alerts: prioritized incidents,
+                time-to-decision, downtime, and operator workflows.
+              </p>
+              <ul class="bullets compact">
+                <li>Defined operator persona + metrics; shipped alerting + prioritization MVP.</li>
+                <li>Designed iteration loop based on stakeholder feedback.</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Product</span><span class="tag">Metrics</span><span class="tag">Dashboards</span>
+              </div>
+              <div class="project-actions">
+                <a class="link" href="#" aria-label="Open case study (placeholder)">Case study →</a>
+                <a class="link" href="#" aria-label="Open repo (placeholder)">Repo →</a>
+              </div>
+            </article>
+
+            <article class="card project" data-tags="data,viz">
+              <h3>GA4 Automated Reporting Suite</h3>
+              <p class="muted">
+                Automated funnel + KPI reporting with consistent definitions and stakeholder-ready summaries.
+              </p>
+              <ul class="bullets compact">
+                <li>Built baseline KPIs + anomaly checks for redirects and tracking edge cases.</li>
+                <li>Delivered dashboards and recurring insights for non-technical audiences.</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">GA4</span><span class="tag">Tableau</span><span class="tag">Analytics</span>
+              </div>
+              <div class="project-actions">
+                <a class="link" href="#">Write-up →</a>
+                <a class="link" href="#">Screens →</a>
+              </div>
+            </article>
+
+            <article class="card project" data-tags="data">
+              <h3>Health Data Analysis Tool</h3>
+              <p class="muted">
+                Data cleaning + analysis pipeline with reproducible outputs and interpretable results.
+              </p>
+              <ul class="bullets compact">
+                <li>Built analysis notebooks and summary outputs for decision-making.</li>
+                <li>Focused on accuracy, validation, and clear storytelling.</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">R</span><span class="tag">EDA</span>
+              </div>
+              <div class="project-actions">
+                <a class="link" href="#">Notebook →</a>
+                <a class="link" href="#">Repo →</a>
+              </div>
+            </article>
+
+            <article class="card project" data-tags="product,viz">
+              <h3>Husky Commute (Concept)</h3>
+              <p class="muted">
+                UW student commute app concept: incentives, leaderboards, and carbon savings.
+              </p>
+              <ul class="bullets compact">
+                <li>Outlined behavioral mechanics + measurement plan (activation, retention).</li>
+                <li>Designed core flows and KPI instrumentation.</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Product</span><span class="tag">UX</span><span class="tag">KPIs</span>
+              </div>
+              <div class="project-actions">
+                <a class="link" href="#">Deck →</a>
+                <a class="link" href="#">Figma →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="grid-2">
+            <div>
+              <h2>About</h2>
+              <p class="muted">
+                I’m a UW Informatics student (Class of 2026) focused on data analytics and product.
+                I like work that’s measurable: clean instrumentation, tight definitions, and insights
+                that change decisions.
+              </p>
+
+              <div class="card mini">
+                <h3>What I’m best at</h3>
+                <ul class="bullets compact">
+                  <li>Turning vague questions into metrics + dashboards</li>
+                  <li>SQL that’s reliable and explainable</li>
+                  <li>Stakeholder-ready storytelling (not just charts)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Toolbox</h3>
+              <div class="toolbox">
+                <div class="tool">
+                  <p class="tool-title">Languages</p>
+                  <p class="muted">Python, SQL, R, Java</p>
+                </div>
+                <div class="tool">
+                  <p class="tool-title">Analytics</p>
+                  <p class="muted">GA4, funnel analysis, experimentation</p>
+                </div>
+                <div class="tool">
+                  <p class="tool-title">Visualization</p>
+                  <p class="muted">Tableau, dashboards, reporting</p>
+                </div>
+                <div class="tool">
+                  <p class="tool-title">Product</p>
+                  <p class="muted">PRDs, metrics, MVP iteration</p>
+                </div>
+              </div>
+
+              <div class="callout">
+                <p>
+                  Want this to match your resume exactly? Replace the bullets in Experience + Projects
+                  with your final resume bullets.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p class="muted">
+            Best way to reach me: email. I usually respond within a day.
+          </p>
+
+          <div class="grid-2">
+            <div class="card">
+              <h3>Email</h3>
+              <p class="muted">
+                <a class="link" href="mailto:lebanm04@uw.edu">lebanm04@uw.edu</a>
+              </p>
+
+              <h3>Links</h3>
+              <ul class="link-list">
+                <li><a class="link" href="#" target="_blank" rel="noreferrer">LinkedIn →</a></li>
+                <li><a class="link" href="#" target="_blank" rel="noreferrer">GitHub →</a></li>
+                <li><a class="link" href="#" target="_blank" rel="noreferrer">Tableau Public →</a></li>
+              </ul>
+            </div>
+
+            <form class="card" id="contactForm">
+              <h3>Send a message</h3>
+
+              <label>
+                Name
+                <input name="name" type="text" autocomplete="name" required />
+              </label>
+
+              <label>
+                Email
+                <input name="email" type="email" autocomplete="email" required />
+              </label>
+
+              <label>
+                Message
+                <textarea name="message" rows="5" required></textarea>
+              </label>
+
+              <button class="btn" type="submit">Copy message</button>
+              <p class="fineprint" id="formNote" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">© <span id="year"></span> Leban Mohamud</p>
+        <button class="link" id="toTop">Back to top ↑</button>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
