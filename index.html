@@ -18,7 +18,13 @@
       <nav class="nav">
         <a class="brand" href="#top" aria-label="Go to top">LM</a>
 
-        <button class="nav-toggle" aria-expanded="false" aria-controls="navLinks">
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="navLinks"
+          aria-label="Toggle navigation"
+          type="button"
+        >
           <span class="sr-only">Toggle navigation</span>
           <span class="burger" aria-hidden="true"></span>
         </button>
@@ -28,7 +34,9 @@
           <a href="#projects">Projects</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
-          <a class="btn btn-small" href="#" id="resumeLink">Resume</a>
+          <a class="btn btn-small" href="LebanMohamudResume.pdf" id="resumeLink" target="_blank" rel="noreferrer">
+            Resume
+          </a>
         </div>
       </nav>
     </header>
@@ -93,7 +101,7 @@
             </div>
 
             <p class="fineprint">
-              Tip: Replace “LM” with your photo later (or keep it clean).
+              Tip: Replace “LM” with your photo later if you want.
             </p>
           </div>
         </div>
@@ -154,16 +162,16 @@
             </div>
 
             <div class="filters">
-              <button class="pill is-active" data-filter="all">All</button>
-              <button class="pill" data-filter="data">Data</button>
-              <button class="pill" data-filter="product">Product</button>
-              <button class="pill" data-filter="viz">Viz</button>
+              <button class="pill is-active" data-filter="all" type="button">All</button>
+              <button class="pill" data-filter="data" type="button">Data</button>
+              <button class="pill" data-filter="product" type="button">Product</button>
+              <button class="pill" data-filter="viz" type="button">Viz</button>
             </div>
           </div>
 
           <div class="project-grid" id="projectGrid">
-            <article class="card project" data-tags="product,data">
-              <h3>Fleet Safety & Ops Dashboard (MVP)</h3>
+            <article class="card project is-visible" data-tags="product,data">
+              <h3>Fleet Safety &amp; Ops Dashboard (MVP)</h3>
               <p class="muted">
                 Product-style dashboard for telematics + alerts: prioritized incidents,
                 time-to-decision, downtime, and operator workflows.
@@ -176,12 +184,12 @@
                 <span class="tag">Product</span><span class="tag">Metrics</span><span class="tag">Dashboards</span>
               </div>
               <div class="project-actions">
-                <a class="link" href="#" aria-label="Open case study (placeholder)">Case study →</a>
-                <a class="link" href="#" aria-label="Open repo (placeholder)">Repo →</a>
+                <a class="link" href="#" aria-label="Open fleet safety dashboard case study">Case study →</a>
+                <a class="link" href="#" aria-label="Open fleet safety dashboard repository">Repo →</a>
               </div>
             </article>
 
-            <article class="card project" data-tags="data,viz">
+            <article class="card project is-visible" data-tags="data,viz">
               <h3>GA4 Automated Reporting Suite</h3>
               <p class="muted">
                 Automated funnel + KPI reporting with consistent definitions and stakeholder-ready summaries.
@@ -199,7 +207,7 @@
               </div>
             </article>
 
-            <article class="card project" data-tags="data">
+            <article class="card project is-visible" data-tags="data">
               <h3>Health Data Analysis Tool</h3>
               <p class="muted">
                 Data cleaning + analysis pipeline with reproducible outputs and interpretable results.
@@ -217,7 +225,7 @@
               </div>
             </article>
 
-            <article class="card project" data-tags="product,viz">
+            <article class="card project is-visible" data-tags="product,viz">
               <h3>Husky Commute (Concept)</h3>
               <p class="muted">
                 UW student commute app concept: incentives, leaderboards, and carbon savings.
@@ -255,7 +263,7 @@
                 <ul class="bullets compact">
                   <li>Turning vague questions into metrics + dashboards</li>
                   <li>SQL that’s reliable and explainable</li>
-                  <li>Stakeholder-ready storytelling (not just charts)</li>
+                  <li>Stakeholder-ready storytelling, not just charts</li>
                 </ul>
               </div>
             </div>
@@ -283,8 +291,8 @@
 
               <div class="callout">
                 <p>
-                  Want this to match your resume exactly? Replace the bullets in Experience + Projects
-                  with your final resume bullets.
+                  Replace the current bullets in Experience and Projects with your final resume bullets
+                  once you lock in your latest version.
                 </p>
               </div>
             </div>
@@ -333,7 +341,7 @@
                 <textarea name="message" rows="5" required></textarea>
               </label>
 
-              <button class="btn" type="submit">Copy message</button>
+              <button class="btn" type="submit">Send message</button>
               <p class="fineprint" id="formNote" aria-live="polite"></p>
             </form>
           </div>
@@ -344,7 +352,7 @@
     <footer class="footer">
       <div class="container footer-inner">
         <p class="muted">© <span id="year"></span> Leban Mohamud</p>
-        <button class="link" id="toTop">Back to top ↑</button>
+        <button class="link" id="toTop" type="button">Back to top ↑</button>
       </div>
     </footer>
 
